@@ -1,8 +1,7 @@
 apply plugin: 'com.android.library'
-apply plugin: 'checkstyle'
 apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
 
+group = 'com.github.Nishchai77'
 ext {
     bintrayRepo = 'maven'
     bintrayName = 'pdfviewpager'

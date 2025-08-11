@@ -1,19 +1,21 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+// Top-level build file
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.1'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        // Removed Bintray plugin — it's dead
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1' // works better with JitPack
     }
 }
 
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
+
